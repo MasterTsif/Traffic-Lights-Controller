@@ -1,2 +1,2 @@
 # Traffic-Lights-Controller
-Traffic Light Controller implemented in VHDL and developed using Quartus, designed for deployment on the DE1-SoC FPGA platform.
+This project outlines the design of a traffic light controller system that incorporates an emergency mode feature and pedestrian interaction. Specifically, the system includes a pedestrian button which, when activated, shortens the duration of the green signal for vehicular traffic to prioritize pedestrian crossing. Additionally, the controller is capable of switching into an emergency mode, overriding normal operation to ensure safety during critical events.
