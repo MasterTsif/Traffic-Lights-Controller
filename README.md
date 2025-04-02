@@ -8,6 +8,3 @@ https://github.com/user-attachments/assets/af630557-7492-4b48-89d5-1d350d347e4d
 
 Traffic Lights - Emergency Mode:
 https://github.com/user-attachments/assets/7774f25a-a66e-421c-8b7e-6e5a56cffa61
-
-Pedestrian button pressed simulated:
-Uploading PedFinal.mp4…
