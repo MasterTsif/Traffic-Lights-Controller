@@ -1,8 +1,8 @@
 https://github.com/user-attachments/assets/af630557-7492-4b48-89d5-1d350d347e4d
 # Traffic-Lights-Controller
-This project outlines the design of a traffic light controller system that incorporates an emergency mode feature and pedestrian interaction. Specifically, the system includes a pedestrian button which, when activated, shortens the duration of the green signal for vehicular traffic to prioritize pedestrian crossing. Additionally, the controller is capable of switching into an emergency mode, overriding normal operation to ensure safety during critical events.
+This project presents the design and implementation of a comprehensive traffic light control system in VHDL, intended for deployment on an FPGA platform. The system supports normal traffic signaling, pedestrian interaction, emergency mode, and a priority mode for emergency vehicles (police mode). In its standard operation, traffic lights cycle through predefined durations, while a pedestrian can request priority via a switch, halving the duration of the vehicle green phase. In emergency mode, all lights blink simultaneously, overriding normal behavior. In police mode, a rotating light pattern is activated, bypassing the finite state machine logic entirely. The system features an auditory warning mechanism (buzzer) with frequency modulation during the red phase, and three 7-segment displays that show the countdown timers for each state. All functional subsystems are integrated to deliver a reliable, extensible, and realistically behaving traffic controller.
 
-Traffic Lights - Normal Mode:
+Traffic Lights - Normal Mode: (OLD VERSION, a new video will come in a couple of weeks)
 https://github.com/user-attachments/assets/af630557-7492-4b48-89d5-1d350d347e4d
 
 Traffic Lights - Emergency Mode:
