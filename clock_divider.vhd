@@ -20,7 +20,7 @@ begin
             counter <= 0;
             clk_sig <= '0';
         elsif rising_edge(clk_in) then
-            if counter = 25000000 then
+            if counter = 25000000 then --Change to 25000 for simulation
                 clk_sig <= not clk_sig;
                 counter <= 0;
             else
