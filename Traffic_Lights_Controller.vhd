@@ -45,7 +45,7 @@ architecture Behavioral of Traffic_Lights_Controller is
 	 ------------------------------------------------------------------
     -- Component: Debouncer
     -- Description: Removes glitches and bouncing from an input signal,
-	 -- used for the switches of emergency and ped_switch.
+	 -- used for the switches of emergency, ped_switch and police_siren.
     ------------------------------------------------------------------
     component debouncer is
         port (
@@ -165,10 +165,10 @@ begin
 			  toggle    <= '0';
 		 elsif rising_edge(clk_divided) then
 			  if police_siren_clean = '1' then
-					-- Κυκλική μετατόπιση αριστερά (rotate left)
+					-- Rotate left, cars only.
 					police_pattern <= police_pattern(1 downto 0) & police_pattern(2);
 					veh_light <= police_pattern;
-					ped_light <= "00";  -- ή μπορείς να παίξεις με pattern και στους πεζούς
+					ped_light <= "00";
 			  else
 					if emergency_clean = '1' then -- Emergency mode active
 						 toggle <= not toggle;
