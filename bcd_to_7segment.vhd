@@ -1,9 +1,3 @@
---==============================================================================
--- File: bcd_to_7segment.vhd
--- Description: Converts a BCD digit (0–9) to the corresponding 7‑segment display
---              pattern (active‑low segments).
---==============================================================================
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
